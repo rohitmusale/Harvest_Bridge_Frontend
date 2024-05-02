@@ -1,0 +1,45 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <h1>Recommend Pesticide based on pest</h1>
+    <h5>Please upload the picture which clearly shows the pest, so that we can recommend you, the pesticide accordingly!</h5>
+    <br>
+    <div ngModelGroup="farmDetails" #farmDetails="ngModelGroup">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-2">
+    <label  class="form-label">Nitrogen (ratio)</label>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-3">
+    <input type="file" class="form-control"  name="filename"  placeholder="Enter Nitrogen Value in ratio" ngModel required>
+    <small *ngIf="farmDetails.invalid && farmDetails.touched">This field is required</small>
+
+  </div>
+  </div>
+ 
+</div>
+  
+  <br>
+ 
+  
+ 
+  <br>
+  <div class="row">
+    <div class="col-md-4"></div>
+  <div class="col-3">
+    <input class="button" type="submit" value="Predict" id="btn" >
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  </form>
+  </div>
+

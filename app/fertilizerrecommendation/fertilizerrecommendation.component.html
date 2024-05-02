@@ -1,0 +1,97 @@
+<div class="container">
+    <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <h1>Get informed advice on Fertilizer based on Soil</h1>
+    <br>
+
+    <div ngModelGroup="fertilizerDetails" #fertilizerDetails="ngModelGroup">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-2">
+    <label  class="form-label">Nitrogen (ratio)</label>
+    </div>
+  </div>
+  
+
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-3">
+    <input type="text" name="nitrogen" class="form-control"  placeholder="Enter Nitrogen Value in ratio" ngModel required>
+  </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-2">
+    <label  class="form-label">Phosphorous (ratio)</label>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-3">
+    <input type="text" name="phosphorous" class="form-control"  placeholder="Enter Nitrogen Value in ratio" ngModel required>
+  </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-2">
+    <label  class="form-label">Potassium (ratio)</label>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-3">
+    <input type="text" class="form-control" name="potassium"  placeholder="Enter Nitrogen Value in ratio" ngModel required>
+  </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-2">
+    <label  class="form-label">Crop you want to grow</label>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-3">
+     <!-- <input type="text" class="form-control"  placeholder="Enter Nitrogen Value in ratio">  -->
+     <select id="inputState" name="crop" class="form-control" ngModel required>
+        <option selected="" disabled="" value="">Choose Crop You want to grow</option>
+        <option>Mango</option>
+        <option>Rice</option>
+        <option>Apple</option>
+        
+      </select>
+    </div>
+  </div>
+  </div>
+  <br>
+ 
+  
+  <div class="form-row row">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-8">
+    <small *ngIf="fertilizerDetails.invalid && fertilizerDetails.touched">Some of the required fields are does not have valid value</small>
+
+</div>
+</div>
+  
+  <br>
+  <div class="row">
+    <div class="col-md-4"></div>
+  <div class="col-3">
+    <input class="button" type="submit" value="Register" id="btn" >
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  </form>
+  </div>

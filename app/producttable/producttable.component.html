@@ -1,0 +1,32 @@
+<div class="container">
+    <h2>Products List</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr *ngFor="let product of products">
+          <td>{{product.prid}}</td>
+          <td><img  alt="Product Image" height="50" [src]="product.primg"></td>
+          
+          <td >{{product.prname}}</td>
+          
+          <td>{{product.prprice}}</td>
+          
+          <td>
+            <button class="btn btn-primary" style="margin-right: 10px;">Edit</button>
+            <!-- (click)="editProduct(product)" -->
+            <button class="btn btn-danger" >Delete</button>
+            <!-- (click)="deleteProduct(product)" -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

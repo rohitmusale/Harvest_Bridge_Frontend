@@ -1,0 +1,18 @@
+<div class="container">
+	<form [formGroup]="addShopCartForm">
+	<div class="row">
+	  <div class="col" *ngFor="let product of products">
+		<div class="card">
+		  <img [src]="product.primg" class="card-img-top" alt="Product Image" >
+		  <div class="card-body">
+			<p name="prid" >{{product.prid}}</p>
+			<h5 class="card-title" name="prname">{{ product.prname }}</h5>
+			<p class="card-text" name="prprice">Price: ₹{{ product.prprice }}</p>
+			 <button class="btn btn-primary" >Add to Cart</button>   <!--(click)="addShopCart()" -->
+		  </div>
+		</div>
+	  </div>
+	</div>
+</form>
+  </div>
+  

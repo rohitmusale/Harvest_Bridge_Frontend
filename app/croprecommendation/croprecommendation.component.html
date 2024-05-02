@@ -1,0 +1,127 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+  <h1>Find out the most suitable CROP to grow in your FARM</h1>
+  <br>
+
+  <div ngModelGroup="farmDetails" #farmDetails="ngModelGroup">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-2">
+      <label  class="form-label">Nitrogen (ratio)</label>
+      </div>
+    </div>
+    
+  
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-3">
+      <input type="text" name="nitrogen" class="form-control"  placeholder="Enter Nitrogen Value in ratio" ngModel required>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-2">
+      <label  class="form-label">Phosphorous (ratio)</label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-3">
+      <input type="text" name="phosphorous" class="form-control"  placeholder="Enter Nitrogen Value in ratio" ngModel required>
+    </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-2">
+      <label  class="form-label">Potassium (ratio)</label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-3">
+      <input type="text" class="form-control" name="potassium"  placeholder="Enter Nitrogen Value in ratio" ngModel required>
+    </div>
+    </div>
+<br>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-2">
+  <label  class="form-label">PH Level</label>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-3">
+  <input type="text" class="form-control" name="phlevel" placeholder="Enter Nitrogen Value in ratio" ngModel required>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-2">
+  <label  class="form-label">Rainfall (in mm)</label>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-3">
+  <input type="text" class="form-control" name="rainfall" placeholder="Enter Nitrogen Value in ratio" ngModel required>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-2">
+  <label  class="form-label">Temperature (in <sup>o</sup>C)</label>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-3">
+  <input type="text" class="form-control" name="temp" placeholder="Enter Nitrogen Value in ratio" ngModel required>
+</div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-2">
+  <label  class="form-label">Relative Humidity (in %)</label>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-3">
+  <input type="text" class="form-control" name="humidity" placeholder="Enter Nitrogen Value in ratio" ngModel required>
+</div>
+</div>
+</div>
+<br>
+<div class="form-row row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-8">
+  <small *ngIf="farmDetails.invalid && farmDetails.touched">Some of the required fields are does not have valid value</small>
+
+</div></div>
+<div class="row">
+  <div class="col-md-4"></div>
+<div class="col-3">
+  <input class="button" type="submit" value="Predict" id="btn" >
+</div>
+</div>
+
+
+
+
+
+
+
+</form>
+</div>

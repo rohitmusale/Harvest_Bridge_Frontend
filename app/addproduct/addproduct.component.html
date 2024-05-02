@@ -1,0 +1,31 @@
+<div class="container">
+    
+    <form [formGroup]="addProductForm">
+      <div class="form-group">
+        <div class="form-group">
+          <h2>Add Product</h2>
+          <div >
+          <label for="productImage">Product Image: </label>
+         <input type="file" name="primg"  class="form-control-file" id="productImage" required formControlName="primg">     <!-- (change)="onFileSelected($event)"   accept="image/*"-->
+        </div>
+        <br>
+        <label for="productName">Product Name:</label>
+        <input type="text"  placeholder="Enter Product Name" class="form-control" id="prname"  name="prname" required formControlName="prname">
+      </div><br>
+      <div class="form-group">
+        <label for="productPrice">Product Price:</label>
+        <input type="number" placeholder="Enter Product Price" class="form-control" id="prprice"  name="prprice" required formControlName="prprice">
+      </div>
+    </div>
+      
+      
+        <div class="col-sm-12">
+        <!-- <small *ngIf="productDetials.invalid && productDetials.touched">Some of the required fields are does not have valid value</small> -->
+    
+    </div>
+
+      <br>
+      <button type="submit" class="btn btn-primary" (click)="addProduct()">Submit</button>
+    </form>
+  </div>
+  

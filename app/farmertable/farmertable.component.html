@@ -1,0 +1,54 @@
+<!-- farmers.component.html -->
+
+<div class="container">
+    <h2>Registered Farmers</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Farmer ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Address</th>
+          <th>Password</th>
+          <th>Confirm Password</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr >
+            <!-- *ngFor="let farmer of farmers" -->
+          <td>id</td>
+          <!-- {{ farmer.id }} -->
+          <td></td>
+          <!-- {{ farmer.firstName }} -->
+          <td></td>
+          <!-- {{ farmer.lastName }} -->
+          <td></td>
+          <!-- {{ farmer.email }} -->
+          <td></td>
+          <!-- {{ farmer.phone }} -->
+          <td></td>
+          <!-- {{ farmer.age }} -->
+          <td></td>
+          <!-- {{ farmer.gender }} -->
+          <td></td>
+          <!-- {{ farmer.address }} -->
+          <td></td>
+          <!-- {{ farmer.password }} -->
+          <td></td>
+          <!-- {{ farmer.confirmPassword }} -->
+          <td>
+            <button  class="btn btn-primary">Update</button>
+            <!-- (click)="updateFarmer(farmer)" -->
+            <button  class="btn btn-danger">Delete</button>
+            <!-- (click)="deleteFarmer(farmer.id)" -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

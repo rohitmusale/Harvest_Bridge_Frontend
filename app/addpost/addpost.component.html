@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form [formGroup]="addPostFrom" >
+<div class="container">
+   
+<h1>Add Post</h1>
+<br>
+<div class="row">
+    <div class=col-md-1></div>
+    <div class=col-md-5>
+<canvas id= "canv1" ></canvas>
+</div>
+</div>
+<div  >
+<div class="row">
+    <div class=col-md-1></div>
+    <div class=col-md-5>
+<p>
+Filename:
+<input type="file" multiple="false" id=finput  required formControlName="pimg">
+</p>
+</div>
+</div>
+
+<div class="row">
+    <div class=col-md-1></div>
+    <div class=col-md-5>
+<textarea name="desc" id="desc" cols="30" rows="10" required formControlName="pdesc"></textarea>
+    </div></div>
+</div>
+<br>
+
+<div class="form-row row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-8">
+    <!-- <small *ngIf="personalDetails.invalid && personalDetails.touched">Some of the required fields are does not have valid value</small> -->
+
+</div></div>
+
+<div class="row">
+    <div class=col-md-4                                 ></div>
+    <div class=col-md-5>
+        <input class="button " type="submit" value="Make Post" id="btn" (click)="addPost()">
+    </div></div>
+
+</div>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
+</script>
+<!-- <script>
+    function upload(){
+  var imgcanvas = document.getElementById("canv1");
+  var fileinput = document.getElementById("finput");
+  var image = new SimpleImage(fileinput);
+  image.drawTo(imgcanvas);
+}
+</script> -->
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+h3{
+    font-size: xx-large;
+    color: white;
+    font-weight: bolder;
+}
+.imgrecom{
+    background-size: cover;
+   
+}
+.backgrd{
+    background-color: rgba(228, 224, 224, 0.825);
+    border-radius: 10px;
+    position: inherit;
+    
+    
+}
+.hvr:hover{
+    border-width: 5px;
+    box-shadow: 5px 5px 5px 5px rgba(40, 39, 39, 0.604);
+    
+    
+}
+.hvr{
+    background-blend-mode:soft-light;
+    
+    /* opacity: 0.9; */
+    position: inherit;
+}

@@ -1,0 +1,79 @@
+element.style {
+}
+.text-center {
+    text-align: center !important;
+
+}
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+.px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+.my-5 {
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.img1{
+    opacity: 0.2;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+h2{
+    font-weight: bold;
+    color: rgba(249, 245, 245, 0.888);
+}
+h3{
+    color: rgb(11, 11, 11);
+}
+body {
+    margin: 0;
+    
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background: rgba(0, 0, 0, 0.4) url('https://img.freepik.com/free-photo/agriculture-iot-with-rice-field-background_53876-124635.jpg?t=st=1713416434~exp=1713420034~hmac=5284dba7d2c22a7878d367ab7ec705e9142ff71708cbb3d0706482fd3fec1cf9&w=740');
+    /* background-color: var(--bs-body-bg); */
+    background-blend-mode:soft-light;
+    background-repeat: no-repeat;
+   background-size: cover;
+    width: auto;
+    
+   height: 800px;
+   
+    -webkit-text-size-adjust: 100%;
+    /* -webkit-tap-highlight-color: transparent; */
+}
+/* .hvr{
+    background-blend-mode:soft-light;
+} */
+.container{
+    /* background-image: url(''); */
+    height: 700px;
+}
+:root {
+    --bs-breakpoint-xs: 0;
+    --bs-breakpoint-sm: 576px;
+    --bs-breakpoint-md: 768px;
+    --bs-breakpoint-lg: 992px;
+    --bs-breakpoint-xl: 1200px;
+    --bs-breakpoint-xxl: 1400px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}

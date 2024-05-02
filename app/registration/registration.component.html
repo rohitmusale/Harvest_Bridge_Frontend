@@ -1,0 +1,104 @@
+<app-header></app-header>
+
+<body>
+    <form >
+    <div class="wrapper">
+    <div class="inner">
+    <div class="image-holder">
+    <img src="https://img.freepik.com/free-photo/view-woman-working-agricultural-sector-celebrate-labour-day-women_23-2151252046.jpg?t=st=1713003095~exp=1713006695~hmac=1025d222fc1e106ef2be715bb3e7e08d8dd340e3a1cb5f085232eeba56a2b11a&w=360" alt="">
+    </div>
+    <form  [formGroup]="fregisterForm" >
+    <h1 class="clr">Farmer Registration</h1>
+    <br><br>
+  <div >   <!--ngModelGroup="personalDetails" #personalDetails="ngModelGroup" -->
+    <div class="form-row row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+            <input type="text" id="firstname" name="fname" class="form-control" placeholder="First Name"  required formControlName="fname">
+            <!-- <small *ngIf="fname.invalid && fname.touched">First Name is required Field</small>
+            <span *ngIf="firstname">You entered {{firstname}}</span> -->
+        </div>
+        
+            
+        
+        <div class="col-sm-5">
+            <input type="text" id="lastname" name="lname" class="form-control" placeholder="Last Name"  required formControlName="lname">
+            <!-- <small *ngIf="fname.invalid && fname.touched">Last Name is required Field</small>
+            <span *ngIf="lastname">You entered {{lastname}}</span> -->
+        </div>
+    </div>
+
+    <div class="form-row row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+            <input type="email" id="email" name="email" class="form-control" placeholder="Mail"  required email formControlName="email">
+        </div>
+        <div class="col-sm-5">
+            <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone Number" required formControlName="phone">
+        </div>
+    </div>
+    
+    <div class="form-row row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5">
+            <input type="number" id="age" name="age" class="form-control" placeholder="Age"  required  formControlName="age">
+        </div>
+        <div class="col-sm-5">
+            <div class="form-holder">
+                <select name="gender" id="gender" class="form-control" required formControlName="gender">
+                <option value="" disabled="" selected="">Choose Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                
+                </select>
+                <i class="zmdi zmdi-chevron-down"></i>
+                </div>
+        </div>
+    </div>
+
+    <div class="form-row row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <textarea name="address" id="address" placeholder="Address" class="form-control" style="height: 50px;"  required formControlName="address"></textarea>
+    </div>
+</div>
+
+<div class="form-row row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password"  required formControlName="password">
+    </div>
+    <div class="col-sm-5">
+        <input type="password" id="fcpassword" name="cpassword" class="form-control" placeholder="Confirm Password"  required formControlName="cpassword">
+    </div>
+</div>
+
+
+
+    <div class="form-row row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-8">
+        <!-- <small *ngIf="personalDetails.invalid && personalDetails.touched">Some of the required fields are does not have valid value</small> -->
+    
+    </div>
+</div>
+    
+   <input class="button" type="submit" value="Register" id="btn" (click)="register()" routerLink="/farmerprofile"><!--[disabled]="!myForm.valid"-->
+</div>
+</form>
+    </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <!-- <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-23581568-13');
+    </script> -->
+    <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon="{&quot;rayId&quot;:&quot;873a989afbe2a75c&quot;,&quot;version&quot;:&quot;2024.3.0&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;}" crossorigin="anonymous"></script>
+</form>
+    </body>

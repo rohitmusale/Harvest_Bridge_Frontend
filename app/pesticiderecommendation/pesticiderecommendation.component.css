@@ -1,0 +1,75 @@
+form{
+    width: auto;
+    min-height: 500px;
+    height: auto;
+    border-radius: 5px;
+    margin: 2% auto;
+    box-shadow: 0 9px 100px hsla(120, 94%, 6%, 0.31);
+    padding: 2%;
+   
+    border-radius: 7%;
+}
+
+h1,h5{
+    text-align: center;
+}
+
+row{
+    align-content: center;
+}
+
+input.ng-invalid.ng-touched{
+    border: red 1px solid;
+  }
+small{
+  color: red;
+}
+
+  .button {
+    height: 47px;
+    width: 174px;
+    display: flex;
+    border: none;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: "Montserrat-Medium";
+    text-transform: uppercase;
+    background: #05acda;
+    border-radius: 5px;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color; }
+    .button i {
+      margin-left: 8px;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0); }
+    .button:hover {
+      -webkit-animation-name: hvr-back-pulse;
+      animation-name: hvr-back-pulse;
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+      -webkit-animation-delay: 0.5s;
+      animation-delay: 0.5s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      background-color: #17c8f8;
+      color: white; }
+      .button:hover i {
+        -webkit-animation-name: hvr-icon-buzz-out;
+        animation-name: hvr-icon-buzz-out;
+        -webkit-animation-duration: 0.75s;
+        animation-duration: 0.75s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite; }
